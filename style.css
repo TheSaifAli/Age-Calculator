@@ -10,16 +10,20 @@ body {
     max-width:600px;
     margin:0 auto;
     border-radius:10px;
-    border-box:0 0 10px rgb(0 0 0 .2);
+    border-box:0 0 10px rgba(0, 0, 0, .2);
     
 }
 
 h1{
     text-align:center;
+font-size:36px;
+margin-top:0;
+margin-bottom:20px;
 }
 form{
     display:flex;
     flex-direction:column;
+align-items: center;
 }
 #Enterage{
  text-align:center ;
@@ -27,6 +31,8 @@ form{
  padding-top:20px;
 }
 #inputdate{
+padding:8px;
+border: 1px solid #ccc;
 margin-top:15px;
 width:100%;
 max-width:300px;
@@ -34,9 +40,7 @@ border-radius:0 5px 0 0;
 }
 
 #btn{
-    width:50%;
-    max-width:300px;
-    margin:10px auto ;
+    margin-top:10px;
     background-color:cadetblue;
     color:white;
     border-style:none ;
