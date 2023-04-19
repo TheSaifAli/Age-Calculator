@@ -9,7 +9,8 @@ function calculateAge(){
     {
         alert("Please Enter Your Date of Birth");
     }
-    resultEl.innerText = `You are ${getAge(birthdate)} years old.`;
+let age = getAge(birthdate);
+    resultEl.innerHTML = `You are ${age} years old.`;
 }
 function getAge(birthdate)
 {
