@@ -1,0 +1,51 @@
+body {
+    margin:0;
+    padding:20px;
+    background-color:cadetblue;
+    font-family:"monospace",sans-sherif;
+}
+#container{
+    background-color:white;
+    padding:20px;
+    max-width:600px;
+    margin:0 auto;
+    border-radius:10px;
+    border-box:0 0 10px rgb(0 0 0 .2);
+    
+}
+
+h1{
+    text-align:center;
+}
+form{
+    display:flex;
+    flex-direction:column;
+}
+#Enterage{
+ text-align:center ;
+ font-weight:bold;
+ padding-top:20px;
+}
+#inputdate{
+margin-top:15px;
+width:100%;
+max-width:300px;
+border-radius:0 5px 0 0;
+}
+
+#btn{
+    width:50%;
+    max-width:300px;
+    margin:10px auto ;
+    background-color:cadetblue;
+    color:white;
+    border-style:none ;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+#result{
+    margin-top:20px;
+    text-align:center ;
+    font-weight:bold ;
+    
+}
