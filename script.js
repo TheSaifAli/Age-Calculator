@@ -4,21 +4,29 @@ const btnEl = document.getElementById("btn");
     
 
 function calculateAge(){
-    const birthdate = dateEl.value;
-    if(birthdate === "")
+    const birthdatevalue = dateEl.value;
+    if(birthdatevalue === "")
     {
         alert("Please Enter Your Date of Birth");
     }
-let age = getAge(birthdate);
-    resultEl.innerHTML = `You are ${age} years old.`;
-}
-function getAge(birthdate)
-{
     const currentdate = new Date();
-    const brthdate = new Date(birthdate);
-    let age = currentdate.getFullYear() - brthdate.getFullYear();
+    const birthdate = new Date(birthdatevalue);
     
-    return age;
+    let year = currentdate.getFullYear() - birthdate.getFullYear();
+    
+    let month = currentdate.getMonth()- birthdate.getMonth();
+    
+    let day = currentdate.getDay() - birthdate.getDay();
+    if( month<0 || (month === 0 && currentdate.getDate() < birthdate.getDate()) )
+    {
+        year--;
+    }
+    
+    let age = `You Are ${year} ${(year>1)?"years":"year"}, ${month} ${(month>1)?"months":"month"} , ${day} ${(day>1)?"days":"day"} old`;
+    
+    resultEl.innerHTML=age;
+    
 }
+
 
 btnEl.addEventListener("click",calculateAge);
